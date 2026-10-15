@@ -51,7 +51,7 @@ Por qué: Room genera su implementación mediante anotaciones (`@Entity`, `@Dao`
 
 ### 2.4 `gradle/libs.versions.toml:8-9` — nuevas versiones
 
-- `room = "2.6.1"`: versión estable y muy documentada, adecuada para un ejemplo de curso. Fija una sola versión para `room-runtime`, `room-ktx` y `room-compiler` para que no se mezclen.
+- `room = "2.7.1"`: versión estable. Se partió de `2.6.1`, pero el build falló en `:app:kspDebugKotlin` con `unexpected jvm signature V` (incompatibilidad del `room-compiler` 2.6.1 con este KSP); subir a `2.7.1` lo corrigió y `assembleDebug` compila. Fija una sola versión para `room-runtime`, `room-ktx` y `room-compiler` para que no se mezclen.
 - `lifecycleViewmodelCompose = "2.11.0"`: se iguala a `lifecycleRuntimeKtx = "2.11.0"` para evitar mezclar versiones de Lifecycle.
 
 ### 2.5 `gradle/libs.versions.toml:30-34` + `app/build.gradle.kts:46-51` — dependencias Room + MVVM

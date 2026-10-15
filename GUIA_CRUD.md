@@ -1,7 +1,7 @@
 # Guía CRUD TodoList — Room + MVVM + Navigation Compose
 
 > Para devs que vienen de React. Sin código aplicado al proyecto: esta guía es el paso a paso a seguir.
-> Estado previo requerido: `INITIAL.md` (SDK 37, KSP, Room 2.6.1, Lifecycle).
+> Estado previo requerido: `INITIAL.md` (SDK 37, KSP, Room 2.7.1 — se subió desde 2.6.1 porque el `room-compiler` 2.6.1 fallaba en KSP con `unexpected jvm signature V`, Lifecycle).
 
 ## 0. Mapa mental React → Compose (léelo una vez)
 
